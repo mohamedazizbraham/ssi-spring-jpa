@@ -55,6 +55,7 @@ public class ParticipationService {
                 .map(Participation::getPourcentage)
                 .reduce(0f, Float::sum);
 
+
         if (totalPourcentage + pourcentage > 100) {
             throw new RuntimeException("Le total des participations dépasse 100%");
         }
