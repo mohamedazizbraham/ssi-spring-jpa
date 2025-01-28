@@ -12,4 +12,5 @@ public interface ParticipationRepository extends JpaRepository<Participation, In
     ArrayList<Participation> findByPersonneAndProjet(Personne personne,Projet projet);
     ArrayList<Participation> findByPersonneAndProjetFinAfterOrProjetFinIsNull(Personne personne, LocalDate date);
     int countByPersonneAndProjetFinAfterOrProjetFinIsNull(Personne personne, LocalDate date);
+
 }
